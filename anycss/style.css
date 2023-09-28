@@ -1,0 +1,336 @@
+/* General Styles */
+body {
+background-color: black;
+color: white;
+margin: 0;
+padding: 0;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+color: white;
+text-decoration: none;
+}
+
+/* Navbar */
+nav {
+display: flex;
+justify-content: center;
+background-color: black;
+padding: 20px;
+}
+
+nav ul {
+font-size: 18px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.logo-nav {
+display: flex;
+align-items: center;
+}
+
+.logo-nav .logo {
+margin-right: 10px;
+}
+
+.logo-nav .logo img {
+width: 180px;
+height: 100px;
+}
+
+.main-nav {
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+}
+
+.main-nav li {
+margin-right: 20px;
+}
+
+.main-nav li a {
+font-weight: bold;
+color: white;
+text-decoration: none;
+transition: all 0.3s ease;
+}
+
+.main-nav li.active a {
+color: rgba(250, 217, 0, 0.968);
+}
+
+.main-nav li:hover a {
+color: rgb(241, 205, 23); /* Change the color on hover */
+}
+
+.social-links {
+display: flex;
+align-items: center;
+}
+
+.social-links li {
+margin-right: 10px;
+}
+
+.social-links li a {
+color: white;
+text-decoration: none;
+}
+
+.social-links li a i {
+margin-right: 5px;
+}
+
+/* Welcome Section */
+#welcome {
+background-color: black;
+color: white;
+padding: 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/* Welcome Text */
+.welcome-text {
+flex: 1;
+max-width: 60%;
+}
+
+.welcome-text h1 {
+font-size: 48px;
+margin-bottom: 20px;
+}
+
+.welcome-text h2 {
+font-size: 32px;
+margin-bottom: 20px;
+}
+
+.welcome-text p {
+font-size: 20px;
+margin-bottom: 20px;
+}
+
+.welcome-text .buttons {
+margin-top: 20px;
+}
+
+.welcome-text .buttons a {
+display: inline-block;
+background-color: rgb(255, 197, 6);
+color: rgb(0, 0, 0);
+text-decoration: none;
+padding: 10px 20px;
+margin-right: 10px;
+border-radius: 5px;
+font-weight: bold;
+}
+
+/* My Picture */
+.my-picture {
+flex: 1;
+text-align: right;
+}
+
+.my-picture img {
+width: 500px;
+height: auto;
+border-radius: 5%;
+object-fit: cover;
+}
+
+/* About Me Page */
+.about-me {
+text-align: center;
+margin: 20px;
+}
+
+.about-me h1 {
+font-size: 28px;
+}
+
+.about-me .about-content {
+font-size: 19px;
+line-height: 1.5;
+margin-top: 20px;
+}
+
+/* Testimonies page */
+.testimonies {
+margin: 20px;
+}
+
+.testimonies h1 {
+text-align: center;
+font-size: 28px;
+}
+
+.testimonial {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.testimonial img {
+width: 300px;
+height: 300px;
+border-radius: 60%;
+margin-right: 10px;
+}
+
+.testimonial-content p {
+font-size: 16px;
+margin-bottom: 10px;
+}
+
+.feelings {
+font-size: 24px;
+display: flex;
+}
+
+.feelings span {
+margin-right: 10px;
+}
+
+/* Projects page */
+.Main {
+max-width: 800px;
+margin: 0 auto;
+padding: 40px;
+text-align: center;
+font-family: Arial, sans-serif;
+}
+
+.Main h1 {
+font-size: 32px;
+margin-bottom: 20px;
+}
+
+.project {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 40px;
+}
+
+.project img {
+width: 600px;
+height: 300px;
+object-fit: cover;
+border-radius: 5px;
+margin-right: 20px;
+}
+
+.project-description {
+flex: 1;
+text-align: left;
+}
+
+.project-description h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.project-description p {
+font-size: 16px;
+margin-bottom: 10px;
+}
+
+/* Contact Page */
+.contact {
+text-align: center;
+margin: 20px;
+}
+
+.contact h1 {
+font-size: 28px;
+}
+
+.contact-form {
+max-width: 400px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+}
+
+.contact-form button {
+padding: 10px 20px;
+background-color: rgb(255, 197, 6);
+color: rgb(0, 0, 0);
+border: none;
+cursor: pointer;
+font-weight: bold;
+}
+
+/* Footer */
+footer {
+background-color: black;
+color: white;
+text-align: center;
+padding: 20px;
+}
+
+.footer-text {
+font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+.welcome-text {
+    max-width: 80%;
+}
+
+.my-picture img {
+    width: 400px;
+}
+
+.project img {
+    width: 400px;
+    height: 200px;
+}
+}
+
+@media (max-width: 600px) {
+.welcome-text {
+    max-width: 100%;
+}
+
+.my-picture img {
+    width: 300px;
+}
+
+.project img {
+    width: 300px;
+    height: 150px;
+}
+
+.Main {
+    padding: 20px;
+}
+
+.testimonial img {
+    width: 200px;
+    height: 200px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+}
