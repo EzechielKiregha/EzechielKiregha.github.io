@@ -347,25 +347,6 @@ color: gray;
 font-size: 14px;
 margin: 0;
 }
-.footer-1{
-    position: absolute;
-    bottom: 45px;
-}
-.footer-2{
-    position: absolute;
-    padding: 10px;
-    bottom: 0px;
-}
-.footer-container{
-    justify-content: space-between;
-}
-
-#footer-nav{
-    position: absolute;
-    margin-left: 25%;
-    bottom: 20px;
-}
-
 /* MOBILE WRAPPER */
 /* Existing styles */
 
