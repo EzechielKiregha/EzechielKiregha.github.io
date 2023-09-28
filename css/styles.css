@@ -320,7 +320,7 @@ color: gray; /* Change the color on hover */
 footer {
 background-color: black;
 padding: 20px;
-display: flex;
+bottom: 0;
 align-items: center;
 }
 
@@ -347,9 +347,22 @@ color: gray;
 font-size: 14px;
 margin: 0;
 }
+#footer-nav{
+  position: absolute;
+  bottom: 15px;
+}
+.foo-1{
+  position: absolute;
+  bottom:30px;
+}
+.foo-2{
+  position: absolute;
+  bottom: 0px;
+  padding: 10px;
+}
+
 /* MOBILE WRAPPER */
 /* Existing styles */
-
 /* Add the media query for mobile */
 @media (max-width: 767px) {
 /* Navbar */
@@ -368,6 +381,14 @@ margin: 0;
         /* Responsive styles */
         margin-right: 0;
         margin-bottom: 10px;
+    }
+    .logo-nav{
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo-nav li{
+      margin-right: 0;
+      margin-bottom: 10px;
     }
 
     /* Welcome Section */
@@ -426,11 +447,11 @@ margin: 0;
     /* Main */
     .Main {
         /* Responsive styles */
+        max-width: 100%;
         padding: 20px;
     }
 
     .project {
-        /* Responsive styles */
         flex-direction: column;
         align-items: center;
     }
@@ -449,8 +470,9 @@ margin: 0;
     .social-links {
         /* Responsive styles */
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
+        justify-content: center;
     }
 
     .social-links li {
@@ -468,30 +490,35 @@ margin: 0;
     .foo-links {
     /* Responsive styles */
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     }
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
+   /*  body{
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+   } */
+    main{
+      flex: 1;
     }
-
-    main {
-    flex: 1;
+    footer{
+      text-align: center;
+      position: sticky;
+      z-index: 999;
+      padding: 20px;
     }
-
-    footer {
-    
-    text-align: center;
-    position: sticky;
-    z-index: 999; /* Add a higher z-index to ensure the footer appears above other content */
+    #footer-nav{
+      position: sticky;
+      bottom: 15px;
     }
-    .footer-1{
-        bottom: 10px;
+    .foo-1{
+      position: sticky;
+      bottom:30px;
     }
-    .footer-2{
-        padding: 10px;
-        bottom: 0px;
+    .foo-2{
+      position: sticky;
+      bottom: 0px;
+      padding: 5px;
+      padding: 10px;
     }
 }
