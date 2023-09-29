@@ -361,7 +361,6 @@ margin: 0;
   justify-content: center;
   width: 100%;
   bottom: 0;
-  padding: 5px;
 }
 
 /* MOBILE WRAPPER */
@@ -415,6 +414,7 @@ margin: 0;
 
     .my-picture img {
         /* Responsive styles */
+        padding-top: 5px;
         width: 100%;
         max-width: 400px;
         height: auto;
