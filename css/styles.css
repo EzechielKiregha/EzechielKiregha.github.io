@@ -521,8 +521,7 @@ margin: 0;
     }
     .foo-2{
       position: sticky;
-      bottom: 0px;
+      bottom: 0;
       padding: 5px;
-      padding: 10px;
     }
 }
