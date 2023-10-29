@@ -1,0 +1,269 @@
+    /* Reset styles */
+* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+    
+    /* Global styles */
+body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+}
+    
+.container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 40px;
+}
+    
+    /* Header */
+header {
+        background-color: #0166b3fd;
+        color: #fff;
+        padding: 20px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    }
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    }
+    
+nav ul {
+    font-size: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    
+.logo-nav {
+    display: flex;
+    align-items: center;
+}
+    
+.logo-nav .logo {
+    margin-right: 10px;
+}
+
+.logo-nav .logo img {
+    width: 180px;
+    height: 100px;
+}
+.logo-nav .logo-text{
+    font-weight: 200px;
+    font-size: 1.8em;
+}
+    
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+    
+.main-nav li {
+    margin-right: 20px;
+}
+    
+.main-nav li a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+    
+.main-nav li.active a {
+    color: rgba(255, 255, 255, 0.968);
+}
+    
+.main-nav li:hover a {
+    color: rgb(1, 14, 30);
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-links li {
+    margin-right: 10px;
+}
+
+.social-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links li a i {
+    margin-right: 5px;
+}
+
+    /* Hero section */
+#hero {
+        background-image: url('/tec.avif');
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding: 200px 0;
+        text-align: center;
+}
+
+.hero-content {
+        max-width: 1200px;
+        margin: 0 auto;
+}
+
+.hero-content h1 {
+        font-size: 75px;
+        margin-bottom: 20px;
+}
+
+.hero-content p {
+        font-size: 25px;
+        margin-bottom: 40px;
+}
+
+.btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #fff;
+        color: #0166b3fd;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        border-radius: 5px;
+        font-size: bold;
+}
+.btn:hover{
+    color: rgb(255, 255, 255);
+    background-color: #0166b3fd;
+}
+
+    /* About section */
+/* About section */
+#about {
+    background-color: #f5f5f5;
+    padding: 80px 0;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+}
+    
+    /* Products section */
+#products {
+        padding: 80px 0;
+}
+    
+#products h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+}
+    
+.product-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        gap: 40px;
+}
+    
+.product {
+        text-align: center;
+}
+    
+.product img {
+        max-width: 100%;
+}
+    
+.product h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+}
+    
+.product p {
+        font-size: 18px;
+}
+    
+    /* Contact section */
+#contact {
+        background-color: #f5f5f5;
+        padding: 80px 0;
+}
+    
+#contact h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+}
+    
+form input,
+form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+}
+    
+form button {
+        padding: 10px 20px;
+        background-color: #0166b3fd;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        border-radius: 5px;
+}
+form button:hover {
+    background-color: #bbd4f1;
+    color: #0166b3fd;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.container-foo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.download {
+    display: flex;
+}
+
+.download img {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.social-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.social-link {
+    margin-right: 10px;
+}
+
+.social-link:last-child {
+    margin-right: 0;
+}
+
+.social-link i {
+    margin-right: 5px;
+}
+
+p {
+    margin-top: 20px;
+}
