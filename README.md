@@ -1,4 +1,4 @@
-# ezechielportfolio.github.io
+# ezechielkiregha.github.io
 
 HIRE ME
 You can call me Ezechiel KIREGHA,
