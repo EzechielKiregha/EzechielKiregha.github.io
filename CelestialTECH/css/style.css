@@ -104,7 +104,7 @@ nav ul {
 
     /* Hero section */
 #hero {
-        background-image: url('/tec.avif');
+        background-image: url('img/tec.avif');
         background-size: cover;
         background-position: center;
         color: #fff;
